@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../lib/fileup/fileinput.css">
+
+</head>
+<body>
+	<div id="showFilesBody">
+	<div class="photo_wall_top">
+		<a href="#">印象图片</a>
+			<button type="button" class="btn btn-success text-right"  data-toggle="modal" data-target="#myModal">
+				添加图片
+			</button>
+				
+	</div>
+		
+		<div class="container">
+				<div class="row photo_wall">
+							  <div class="col-xs-6 col-md-6 col-lg-4  album" data-id="1001">
+										<a href="#" class="thumbnail">
+											<img src="../images/404.jpg" alt="图片加载失败" >
+											<div class="showFileExplain">
+												<p>说明文字...</p>
+											</div>
+											<p class="del_photo" data-child-id="1001-001">
+												<span> × </span>
+											</p>
+											
+										</a>
+										<h3>图片名称:Img_....</h3>
+								</div>
+				</div>	
+		</div>
+	</div>
+
+	<!-- 模态框（Modal） -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title" id="myModalLabel">
+									选择上传文图片
+								</h4>
+							</div>
+							<div class="modal-body">
+								<!-- 上传文件控件 -->
+									  <input id="file-Portrait1" type="file" class="file">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">关闭
+								</button>
+								<button type="button" class="btn btn-success">
+									上传
+								</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+				<!-- 模态框（Modal）结束 -->	
+	<script src="../lib/jquery.js"></script>
+	<script src="../lib/fileup/fileinput.js"></script>
+	<script src="../lib/bootstrap.js"></script>
+	<script src="../js/index.js"></script> 
+</body>
+</html>
